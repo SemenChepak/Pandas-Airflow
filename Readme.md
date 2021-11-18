@@ -14,6 +14,10 @@
   git clone https://github.com/SemenChepak/Pandas-Airflow.git
   ```
   2. Go to the created folder
+```bash
+  cd Docker-Airflow
+  ```
+  3. Initialize the database
   ```bash
   docker-compose up airflow-init
   ```
@@ -24,7 +28,7 @@
   airflow-init_1       | 2.2.2
   start_airflow-init_1 exited with code 0
  ```
- 3. Start Images
+ 4. Start Images
   ```bash
   docker-compose up a
   ```
