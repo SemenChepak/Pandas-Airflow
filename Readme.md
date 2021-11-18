@@ -9,40 +9,18 @@
   - redis - The redis - broker that forwards messages from scheduler to worker. 
   
   # Deploy Airflow on Docker Compose
+  1. To get started, download the app
   ```bash
   git clone https://github.com/SemenChepak/Pandas-Airflow.git
   ```
-  # Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
-  ## Installation
-
-Use the package manager [pip](https://pidp.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
-  ## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.sadaspluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+  2. Go to the created folder
+  ```bash
+  docker-compose up airflow-init
+  ```
+  After initialization is complete, you should see a message like below.
+  ```bash
+  airflow-init_1       | Upgrades done
+  airflow-init_1       | Admin user airflow created
+  airflow-init_1       | 2.2.2
+  start_airflow-init_1 exited with code 0
+ ```bash
