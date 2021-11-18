@@ -26,5 +26,7 @@
  ```
  3. Start Images
   ```bash
-  docker-compose up airflow-init
+  docker-compose up a
   ```
+  ## Check yor app
+  - airflow-webserver -  http://localhost:8080.
