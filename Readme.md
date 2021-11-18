@@ -14,7 +14,7 @@
   git clone https://github.com/SemenChepak/Pandas-Airflow.git
   ```
   2. Go to the created folder
-```bash
+  ```bash
   cd Docker-Airflow
   ```
   3. Initialize the database
@@ -30,7 +30,7 @@
  ```
  4. Start Images
   ```bash
-  docker-compose up a
+  docker-compose up
   ```
   ## Check yor app
   - airflow-webserver -  http://localhost:8080.
