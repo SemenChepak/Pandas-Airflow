@@ -1,0 +1,8 @@
+[postgres]
+database = *****
+user = *****
+password = *****
+port = 5432
+[local_import]
+URL = https://storage.googleapis.com/kaggle-data-sets/750216/1305559/bundle/archive.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%%40kaggle-161607.iam.gserviceaccount.com%%2F20211115%%2Fauto%%2Fstorage%%2Fgoog4_request&X-Goog-Date=20211115T161814Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=744f80be363d8a4bab8455ca7f01cbe4f285eef6e81ec09d89942e88211747667b3d2b9788584beec3df2469588fc01cdef706b575799bb009420e7339be655f6efb8f4079dd2d9571dbd295b3489e3f78c899000b1f23130aba5666f99f7b2c4547bc7548d3238c10ddfa29464f2505571c8492e78b8a093b5fec71a281bc972cd3f8022fc1712648fbbdaa1b2430a365a260db9e278e1c02df9e0bece10198fbc1439d908c7049c2601d438f9bfcf3b7884ca4cc6d9228cd198d8392fbe8a5b39b588bf5086c3dfda491e237fdab46e4a4020c2d1c057d1dbfa227e0257ddbfb8825163a2808ba2f83cf08951c72edcc994a5cc2eb9f591e5045f6a9b8d0f0
+PATH = /opt/airflow/dags/pand/files_worker/downloaded_files
