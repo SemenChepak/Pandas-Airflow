@@ -23,4 +23,8 @@
   airflow-init_1       | Admin user airflow created
   airflow-init_1       | 2.2.2
   start_airflow-init_1 exited with code 0
- ```bash
+ ```
+ 3. Start Images
+  ```bash
+  docker-compose up airflow-init
+  ```
