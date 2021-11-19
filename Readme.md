@@ -32,5 +32,8 @@
   ```bash
   docker-compose up
   ```
+  
+ 5. Rename creds.txt to "creds.iti" and enter your own data
   ## Check yor app
   - airflow-webserver -  http://localhost:8080.
+
