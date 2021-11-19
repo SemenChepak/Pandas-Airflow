@@ -28,29 +28,4 @@ def ins_data_to_db(df):
     logging.info(f'db injection finished successfully!')
 
 
-def create_db():
-    logging.info(f'Creating new db!')
 
-    try:
-        q = 'CREATE TABLE cars (\
-                                id SERIAL NOT NULL PRIMARY KEY ,\
-                                model TEXT Not NULL,\
-                                year INT Not NULL,\
-                                price INT Not NULL,\
-                                transmission TEXT,\
-                                mileage INT Not NULL,\
-                                fuelType TEXT Not NULL,\
-                                tax TEXT,\
-                                mpg FLOAT,\
-                                engineSize FLOAT Not NULL,\
-                                manufacturer TEXT,\
-                                date_added timestamp NOT NULL DEFAULT NOW()\
-                                ) ;'
-        ENGINE.execute(q)
-
-        logging.info(f'db created successfully!')
-
-    except Exception as e:
-        error = str(e.__dict__['orig'])
-
-        logging.warning(f'Failed: {error}')

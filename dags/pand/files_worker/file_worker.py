@@ -18,7 +18,6 @@ def extract_from_site() -> None:
     """get data from URL"""
 
     logging.info(f'Extracting files from {config.get("local_import", "URL")}')
-    print(f'_____________________________________________________________________________________________________________{config.get("local_import", "URL")}')
 
     http_response = urlopen(config.get("local_import", "URL"))
     zipfile = ZipFile(BytesIO(http_response.read()))

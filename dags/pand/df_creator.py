@@ -35,7 +35,7 @@ def df_generator(file_list):
                                     'engineSize': pd.Float32Dtype(),
                                     }
                              )
-        except Exception as err:
+        except ValueError as err:
 
             logging.warning(f'Exception: {err}! Called file_cleaner')
 

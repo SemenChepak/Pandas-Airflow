@@ -41,7 +41,7 @@ def delete_empty_rows(df: pd.DataFrame) -> pd.DataFrame:
 
         logging.info(f'Deleting empty rows')
 
-    except Exception as err:
+    except KeyError as err:
 
         logging.warning(f'Exception:{err}')
 
@@ -65,11 +65,9 @@ def fix_columns(df: pd.DataFrame, column_to_change: str, column_with_info: str) 
 
         logging.info(f'fixing column: {column_to_change}')
 
-        for index, row in df.iterrows():
-            if df[column_with_info][index] != -1:
-                df[column_to_change][index] = df[column_with_info][index]
+        df[column_to_change] = df[column_to_change].fillna(df[column_with_info])
 
-    except Exception as err:
+    except KeyError as err:
 
         logging.warning(f'Exception:{err}')
 
@@ -83,7 +81,7 @@ def delete_columns(df: pd.DataFrame, columns: list) -> pd.DataFrame:
 
         logging.info(f'Dropped column:{columns}')
 
-    except Exception as err:
+    except KeyError as err:
 
         logging.warning(f'Exception:{err}')
 
@@ -98,7 +96,7 @@ def rename_columns(df: pd.DataFrame, column_for_rename: str) -> pd.DataFrame:
         new_name = new_name[0] + new_name[1].capitalize()
         df.rename(columns={column_for_rename: new_name}, inplace=True)
 
-    except Exception as err:
+    except KeyError as err:
 
         logging.warning(f'Exception:{err}')
 
